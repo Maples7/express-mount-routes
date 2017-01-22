@@ -1,5 +1,5 @@
-# express-auto-router
-A express package to load router automatically from file system.
+# express-mount-routes
+A express package to mount routes automatically from file system.
 
 ## Why?
 - Avoid multiple router definition codes
