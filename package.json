@@ -1,0 +1,27 @@
+{
+  "name": "express-mount-routes",
+  "version": "0.0.1",
+  "description": "A express package to mount routes automatically from file system.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maples7/express-mount-routes.git"
+  },
+  "keywords": [
+    "express",
+    "router",
+    "routes"
+  ],
+  "author": "Maples7 <maples7.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Maples7/express-mount-routes/issues"
+  },
+  "homepage": "https://github.com/Maples7/express-mount-routes#readme",
+  "dependencies": {
+    "glob": "^7.1.1"
+  }
+}
