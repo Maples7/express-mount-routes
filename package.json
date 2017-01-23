@@ -4,7 +4,8 @@
   "description": "A express package to mount routes automatically from file system.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava",
+    "lint": "eslint lib"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,13 @@
   "homepage": "https://github.com/Maples7/express-mount-routes#readme",
   "dependencies": {
     "glob": "^7.1.1"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "eslint": "^3.14.0",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0"
   }
 }
