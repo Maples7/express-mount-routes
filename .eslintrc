@@ -9,6 +9,8 @@
     "max-nested-callbacks": [2, 3],
     "max-params": [2, 5],
     "complexity": [2, 10],
-    "max-len": [2, 120, 4]
+    "max-len": [2, 120, 4],
+    "global-require": 0,
+    "import/no-dynamic-require": 0
   }
 }

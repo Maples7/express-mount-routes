@@ -23,7 +23,8 @@
   },
   "homepage": "https://github.com/Maples7/express-mount-routes#readme",
   "dependencies": {
-    "glob": "^7.1.1"
+    "glob": "^7.1.1",
+    "lodash": "^4.17.4"
   },
   "devDependencies": {
     "ava": "^0.17.0",
