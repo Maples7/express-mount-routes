@@ -40,7 +40,7 @@ test('POST /api/v1/weibos/:id', async t => {
   t.is(res.text, 'post weibo: 6');
 });
 
-test('delete /api/v1/weibos/temp', async t => {
+test('DELETE /api/v1/weibos/temp', async t => {
   t.plan(2);
 
   const res = await request(makeApp())
@@ -50,7 +50,7 @@ test('delete /api/v1/weibos/temp', async t => {
   t.is(res.text, 'ordinary api');
 });
 
-test('get /api/v1/users/temp', async t => {
+test('GET /api/v1/users/temp', async t => {
   t.plan(2);
 
   const res = await request(makeApp())
