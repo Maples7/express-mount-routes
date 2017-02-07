@@ -1,6 +1,6 @@
 # express-mount-routes
 [![Build Status](https://travis-ci.org/Maples7/express-mount-routes.svg?branch=master)](https://travis-ci.org/Maples7/express-mount-routes)    
-A express package to mount routes automatically from file system.
+An express package to mount routes automatically from file system.
 
 ## Why?
 - Avoid multiple router definition codes
