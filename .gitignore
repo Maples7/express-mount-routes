@@ -38,3 +38,5 @@ jspm_packages
 
 .vscode
 npm-debug.log
+coverage
+.nyc_output
