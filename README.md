@@ -1,6 +1,7 @@
 # express-mount-routes
-[![Build Status](https://travis-ci.org/Maples7/express-mount-routes.svg?branch=master)](https://travis-ci.org/Maples7/express-mount-routes)    
-A express package to mount routes automatically from file system.
+[![Build Status](https://travis-ci.org/Maples7/express-mount-routes.svg?branch=master)](https://travis-ci.org/Maples7/express-mount-routes)
+[![Coverage Status](https://coveralls.io/repos/github/Maples7/express-mount-routes/badge.svg?branch=develop)](https://coveralls.io/github/Maples7/express-mount-routes?branch=master)       
+An express package to mount routes automatically from file system.
 
 ## Why?
 - Avoid multiple router definition codes
