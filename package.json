@@ -1,0 +1,49 @@
+{
+  "name": "express-mount-routes",
+  "version": "0.0.1",
+  "description": "A express package to mount routes automatically from file system.",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc ava",
+    "lint": "eslint lib",
+    "coverage": "./node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls"
+  },
+  "nyc": {
+    "exclude": [
+      "controllers/*.js",
+      "test.js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maples7/express-mount-routes.git"
+  },
+  "keywords": [
+    "express",
+    "router",
+    "routes"
+  ],
+  "author": "Maples7 <maples7.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Maples7/express-mount-routes/issues"
+  },
+  "homepage": "https://github.com/Maples7/express-mount-routes#readme",
+  "dependencies": {
+    "glob": "^7.1.1",
+    "lodash": "^4.17.4",
+    "pluralize": "^3.1.0"
+  },
+  "devDependencies": {
+    "ava": "^0.18.1",
+    "coveralls": "^2.11.16",
+    "eslint": "^3.14.0",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0",
+    "express": "^4.14.1",
+    "nyc": "^10.1.2",
+    "supertest": "^3.0.0"
+  }
+}
