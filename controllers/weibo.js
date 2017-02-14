@@ -2,6 +2,11 @@ module.exports = {
   '/': (req, res, next) => {
     res.end('Weibos Index');
   },
+  '/getArr': [
+    (req, res, next) => {
+      res.end('GET for one more handlers');
+    }
+  ],
   '/:id': {
     'get': (req, res, next) => {
       res.end(`get weibo: ${req.params.id}`);
@@ -11,8 +16,14 @@ module.exports = {
     }
   },
   '/temp': {
-    'delete': (req, res, next) => {
-      res.end('ordinary api');
-    }
+    'delete': [
+      (req, res, next) => {
+        res.myOwnVar = 'this is a middleware.';
+        next();
+      },
+      (req, res, next) => {
+        res.end(`${res.myOwnVar}ordinary api`);
+      }
+    ]
   }
 };

@@ -20,6 +20,16 @@ test('GET /api/v1/weibos/', async t => {
   t.is(res.text, 'Weibos Index');
 });
 
+test('GET /api/v1/weibos/getArr', async t => {
+  t.plan(2);
+
+  const res = await request(makeApp())
+    .get('/api/v1/weibos/getArr');
+
+  t.is(res.status, 200);
+  t.is(res.text, 'GET for one more handlers');
+});
+
 test('GET /api/v1/weibos/:id', async t => {
   t.plan(2);
 
@@ -47,15 +57,15 @@ test('DELETE /api/v1/weibos/temp', async t => {
     .delete('/api/v1/weibos/temp');
 
   t.is(res.status, 200);
-  t.is(res.text, 'ordinary api');
+  t.is(res.text, 'this is a middleware.ordinary api');
 });
 
-test('GET /api/v1/users/temp', async t => {
+test('GET /api/v1/users/test', async t => {
   t.plan(2);
 
   const res = await request(makeApp())
-    .delete('/api/v1/weibos/temp');
+    .get('/api/v1/users/test');
 
   t.is(res.status, 200);
-  t.is(res.text, 'ordinary api');
+  t.is(res.text, '2rd controller');
 });

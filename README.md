@@ -39,11 +39,19 @@ routes(
 ### How to write Controllers
 You must export an object whoes keys are last part of routes and values are objects with HTTP method and handlers. For example:
 ```js
+// FileName: controllers/weibo.js
+
 module.exports = {
-  // when value is a function, the HTTP method would be default value GET
+  // when value is a function or an array of functions, the HTTP method would be default value GET
   '/': (req, res, next) => {
     res.end('Weibos Index');
   },
+  // also you can provide one more handlers with an array of functions: these handlers except last one are called middlerwares in Express
+  '/getArr': [
+    (req, res, next) => {
+      res.end('GET for one more handlers');
+    }
+  ]
   // also you can make URL params
   '/:id': {
     // explicitly identifing an HTTP method can never be wrong
@@ -54,10 +62,17 @@ module.exports = {
       res.end(`post weibo: ${req.params.id}`);
     }
   },
+  // another example for usage of middlerwares
   '/temp': {
-    'delete': (req, res, next) => {
-      res.end('ordinary api');
-    }
+    'delete': [
+      (req, res, next) => {
+        res.myOwnVar = 'this is a middleware.';
+        next();
+      },
+      (req, res, next) => {
+        res.end(`${res.myOwnVar}ordinary api`);
+      }
+    ]
   }
 };
 ```
