@@ -37,7 +37,7 @@ routes(
 ```
 
 ### How to write Controllers
-You must export an object whoes keys are last part of routes and values are objects with HTTP method and handlers. For example:
+You must export an object whose keys are last part of routes and values are objects with HTTP method and handlers. For example:
 ```js
 // FileName: controllers/weibo.js
 
