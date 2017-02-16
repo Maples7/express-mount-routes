@@ -37,7 +37,7 @@ routes(
 ```
 
 ### How to write Controllers
-You must export an object whoes keys are last part of routes and values are objects with HTTP method and handlers. For example:
+You must export an object whose keys are last part of routes and values are objects (or array) with HTTP method and handlers. For example:
 ```js
 // FileName: controllers/weibo.js
 
@@ -80,6 +80,7 @@ module.exports = {
 At last, routes would be combined with `${urlPrefix} + ${pluralized file name of controllers} + ${identified keys}`. Therefore, examples above would moute these routes:
 ```
 GET /api/v1/weibos/
+GET /api/v1/weibos/getArr
 GET /api/v1/weibos/:id
 POST /api/v1/weibos/:id
 DELETE /api/v1/weibos/temp
