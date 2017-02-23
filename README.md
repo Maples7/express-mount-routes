@@ -1,6 +1,9 @@
 # express-mount-routes
 [![Build Status](https://travis-ci.org/Maples7/express-mount-routes.svg?branch=master)](https://travis-ci.org/Maples7/express-mount-routes)
-[![Coverage Status](https://coveralls.io/repos/github/Maples7/express-mount-routes/badge.svg?branch=master)](https://coveralls.io/github/Maples7/express-mount-routes?branch=master)       
+[![Coverage Status](https://coveralls.io/repos/github/Maples7/express-mount-routes/badge.svg?branch=master)](https://coveralls.io/github/Maples7/express-mount-routes?branch=master)
+[![npm version](https://badge.fury.io/js/express-mount-routes.svg)](https://badge.fury.io/js/express-mount-routes)           
+[![NPM](https://nodei.co/npm/express-mount-routes.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/express-mount-routes/)
+[![NPM](https://nodei.co/npm-dl/express-mount-routes.png?months=6&height=3)](https://nodei.co/npm/express-mount-routes/)              
 An express package to mount routes automatically from file system.
 
 ## Why?
