@@ -1,6 +1,6 @@
 {
   "name": "express-mount-routes",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "An express package to mount routes automatically from file system.",
   "main": "index.js",
   "scripts": {
