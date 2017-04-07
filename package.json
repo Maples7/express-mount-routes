@@ -46,7 +46,7 @@
     "nyc": "^10.1.2",
     "supertest": "^3.0.0"
   },
-  "engines" : { 
-    "node" : ">=6.1.0" 
+  "engines": { 
+    "node": ">=6.1.0" 
   } 
 }

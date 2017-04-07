@@ -89,7 +89,7 @@ POST /api/v1/weibos/:id
 DELETE /api/v1/weibos/temp
 ```
 
-You are welcomed to review _test.js_ and _controllers_ dir in this project for more infomation of usage.
+You are welcomed to review _test.js_ and _controllers_ dir in this project for more information of usage.
 
 ## LICENSE
 [MIT](LICENSE)
