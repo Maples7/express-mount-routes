@@ -80,7 +80,7 @@ module.exports = {
 };
 ```
 
-At last, routes would be combined with `${urlPrefix} + ${pluralized file name of controllers} + ${identified keys}`. Therefore, examples above would moute these routes:
+At last, routes would be combined with `${urlPrefix} + ${pluralized file name of controllers} + ${identified keys}`. Therefore, examples above would mount these routes:
 ```
 GET /api/v1/weibos/
 GET /api/v1/weibos/getArr
