@@ -8,13 +8,16 @@ const routes = require('./index.js');
 
 function makeApp() {
   const app = express();
-  routes(app, path.join(__dirname, 'controllers'), { urlPrefix: '/api/v1/', logger: null });
+  routes(app, path.join(__dirname, 'controllers'), {
+    urlPrefix: '/api/v1/',
+    logger: null
+  });
   return app;
 }
 
 function makeApp2() {
   const app = express();
-  routes(app, path.join(__dirname, 'controllers'), { urlPrefix: '/api/v1/' });
+  routes(app, path.join(__dirname, 'controllers'), { urlPrefix: '/api/v1' });
   return app;
 }
 
