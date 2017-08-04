@@ -17,7 +17,7 @@ function makeApp() {
 
 function makeApp2() {
   const app = express();
-  routes(app, path.join(__dirname, 'controllers'), { urlPrefix: '/api/v1' });
+  routes(app, path.join(__dirname, 'controllers'), { urlPrefix: '/api/v1', autoPlural: false });
   return app;
 }
 
@@ -42,7 +42,7 @@ test('GET /api/v1/weibos/getArr', async t => {
 test('GET /api/v1/weibos/:id', async t => {
   t.plan(2);
 
-  const res = await request(makeApp2()).get('/api/v1/weibos/7');
+  const res = await request(makeApp2()).get('/api/v1/weibo/7');
 
   t.is(res.status, 200);
   t.is(res.text, 'get weibo: 7');
