@@ -17,7 +17,10 @@ function makeApp() {
 
 function makeApp2() {
   const app = express();
-  routes(app, path.join(__dirname, 'controllers'), { urlPrefix: '/api/v1', autoPlural: false });
+  routes(app, path.join(__dirname, 'controllers'), {
+    urlPrefix: '/api/v1',
+    autoPlural: false
+  });
   return app;
 }
 
