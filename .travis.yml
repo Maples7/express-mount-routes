@@ -4,4 +4,6 @@ node_js:
   - "6.1"
 after_success: 
   - './node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls'
-cache: yarn
+cache: 
+  directories:
+    - node_modules
