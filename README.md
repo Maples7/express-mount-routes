@@ -34,7 +34,7 @@ routes(
   {       // optional parameters, the 3rd param is not required
     ignore,     // files you want to ignore while scanning controllers dir such as index.js, see parameter options of module glob(https://github.com/isaacs/node-glob#options) for more infomation. Default value: ''
     urlPrefix,  // prefix for routes, such as /api/v1/. Default value: '/'
-    logger,     // logger to print mounted routes. Default value: console, use `null` to disable log,
+    logger,     // logger to print mounted routes. Default value: console.log, use `null` to disable log,
     autoPlural  // whether apply pluralized file name as part of routes automatically. Default value: true
   }
 )
